@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration | Volunteer Event</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Register for the Event</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invitation.html">Invitation</a></li>
+            <li><a href="volunteers.html">Volunteers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form>
+            <label for="username">Username: (Enter your Username)</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password: (Enter your Password)</label>
+            <input type="password" id="password" required>
+
+            <label for="verifyPassword">Verify Password: (Enter your Password again)</label>
+            <input type="password" id="verifyPassword" required>
+
+            <label for="firstName">First Name: (Enter your First Name)</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Last Name: (Enter your Last Name)</label>
+            <input type="text" id="lastName" required>
+
+            <label for="email">Email: (Enter your Email Address)</label>
+            <input type="email" id="email" required>
+
+            <label for="phoneNumber">Phone Number: (Enter your Phone Number)</label>
+            <input type="tel" id="phoneNumber" required>
+
+            <label>Sign up for newsletter:</label>
+            <div>
+                <input type="radio" id="newsletterYes" name="newsletter" value="Yes">
+                <label for="newsletterYes">Yes</label>
+
+                <input type="radio" id="newsletterNo" name="newsletter" value="No">
+                <label for="newsletterNo">No</label>
+            </div>
+
+            <button type="submit">Next Steps</button>
+        </form>
+    </div>
+    <footer>
+        <p>© 2024 Volunteer Event | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

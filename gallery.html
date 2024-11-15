@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery | Volunteer Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Event Gallery</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invitation.html">Invitation</a></li>
+            <li><a href="volunteers.html">Volunteers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery">
+        <!-- Thumbnail images -->
+        <div class="gallery-item">
+            <img src="images/event.jpg" alt="Volunteer Day" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/firefighter.jpg" alt="Fighthing together" onclick="openModal(this)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/silhouette.jpg" alt="Together" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <!-- Modal for expanded image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="expandedImg">
+        <div id="imgCaption"></div>
+    </div>
+
+    <footer>
+        <p>© 2024 Volunteer Event | All Rights Reserved</p>
+    </footer>
+
+    <script src="gallery.js" defer></script>
+</body>
+</html>

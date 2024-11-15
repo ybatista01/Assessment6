@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volunteers | Volunteer Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="volunteers.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Volunteer Management</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invitation.html">Invitation</a></li>
+            <li><a href="volunteers.html">Volunteers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <h2>Volunteers</h2>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" placeholder="Enter First Name">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" placeholder="Enter Last Name">
+        <button onclick="addVolunteer()">Add Volunteer</button>
+
+        <h2>Volunteer List</h2>
+        <textarea id="volunteerList" rows="10" cols="30" readonly></textarea>
+        <button onclick="clearVolunteers()">Clear Volunteers</button>
+        <button onclick="sortVolunteers()">Sort by First Name</button>
+    </section>
+    <footer>
+        <p>© 2024 Volunteer Event | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
